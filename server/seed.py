@@ -4,8 +4,12 @@ from random import randint, choice as rc
 
 from faker import Faker
 
+import sys
+
+sys.path.append("/Users/winnie/python-p4-building-post-patch-delete-api/") 
+
 from app import app
-from models import db, Game, Review, User
+from server.models import db, Game, Review, User
 
 genres = [
     "Platformer",
